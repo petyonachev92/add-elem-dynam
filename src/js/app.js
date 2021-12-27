@@ -1,10 +1,6 @@
 import "../scss/app.scss";
 
-window.addEventListener("DOMContentLoaded", () => {
-  // This block will be executed once the page is loaded and ready
-
-  addArticles();
-});
+document.getElementsByTagName('body')[0].addEventListener('click', addArticles);
 
 function addArticles() {
   for(let i = 0; i < 5; i++){
@@ -14,7 +10,7 @@ function addArticles() {
     let body = document.getElementsByTagName('body')[0];
 
     body.appendChild(message);
-    console.log(i);
+    
   };
 
   
